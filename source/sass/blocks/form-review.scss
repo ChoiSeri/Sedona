@@ -1,0 +1,21 @@
+.form-review {
+  margin-top: 20px;
+}
+
+.form-review__item {
+  margin: 0;
+
+  border: none;
+}
+
+.form-review__title {
+  margin-bottom: 17px;
+
+  font-weight: bold;
+}
+
+.form-review__comment {
+  font-size: 14px;
+  text-align: right;
+  color: $grey-700;
+}

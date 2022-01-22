@@ -1,0 +1,73 @@
+.advantages {
+  text-align: center;
+}
+
+.advantages__slogan {
+  margin: 0 0 26px 0;
+
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.advantages__text {
+  margin: 0 0 11px 0;
+
+  font-size: 14px;
+}
+
+.advantages__list {
+  margin: 0;
+
+  list-style: none;
+}
+
+.advantages__item {
+  padding-top: 25px;
+
+  background-color: $grey;
+}
+
+.advantages__item:first-child,
+.advantages__item:nth-child(2) {
+  background-color: $blue;
+
+  color: $white;
+}
+
+.advantages__item-image::after {
+  display: block;
+  content: "";
+  width: 320px;
+  height: 260px;
+
+  background-color: $blue;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.advantages__item-image:first-child::after {
+  background-image: url("../../img/motel.jpg");
+}
+
+.advantages__item-image:nth-child(2)::after {
+  background-image: url("../../img/devil-bridge.jpg");
+}
+
+.advantages__title {
+  margin: 0 0 21px 0;
+
+  font-weight: bold;
+}
+
+.advantages__subtitle {
+  margin: 0 0 21px 0;
+
+  font-size: 14px;
+}
+
+.advantages__description {
+  margin: 0;
+  padding-bottom: 25px;
+
+  font-size: 14px;
+}

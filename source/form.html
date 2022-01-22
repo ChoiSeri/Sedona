@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Сайт Седона: форма отзыва</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="page-header">
@@ -32,7 +33,6 @@
 <main class="page-main">
   <section class="main-header">
     <div class="wrapper">
-      <img class="main-header__image" src="img/header.jpg" width="320" height="214" alt="Гора в городе Седона">
       <h1 class="main-header__title">Оставьте свой отзыв</h1>
       <p class="main-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них,
         а также о посещенных вами достопримечательностях</p>
@@ -64,8 +64,7 @@
           <legend class="form-review__title">Контактная информация:</legend>
           <div class="contact-form__field field">
             <label class="field__label">Контактный телефон<sup>*</sup>:<br>
-              <input class="field__input field__input--telephone" type="tel" name="telephone"
-                     placeholder="Введите телефон">
+              <input class="field__input field__input--telephone" type="tel" name="telephone" placeholder="Введите телефон">
             </label><br>
           </div>
           <div class="contact-form__field field">
@@ -119,11 +118,16 @@
             </li>
           </ul>
         </fieldset>
-        <label class="form-review__label">Опишите свои эмоции:<br>
-          <textarea class="form-review__textarea" name="text" rows="5"
-                    placeholder="Опишите подробно все свои восторги"></textarea>
-        </label><br>
+        <div class="form-review__item form-feedback">
+          <label class="form-feedback__title">Опишите свои эмоции:<br>
+            <textarea class="form-feedback__textarea" name="text" rows="5"
+                      placeholder="Опишите подробно все свои восторги"></textarea>
+          </label>
+        </div>
         <button class="form-review__button button" type="submit">Отправить отзыв</button>
+        <p class="form-review__comment">
+          * — обязательные поля
+        </p>
       </form>
     </div>
   </section>

@@ -1,0 +1,8 @@
+.radio:not(:last-child) {
+  margin-bottom: 43px;
+}
+
+.radio__label {
+  font-weight: bold;
+  text-transform: none;
+}

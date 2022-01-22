@@ -1,0 +1,31 @@
+.gallery__item {
+  padding: 22px 0 15px 0;
+
+  border-top: 1px $grey-300 solid;
+}
+
+.gallery__item:last-child {
+  border-bottom: 1px solid $grey-300;
+}
+
+.gallery__list {
+  list-style: none;
+}
+
+.gallery__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.gallery__signature {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.gallery__counter {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}

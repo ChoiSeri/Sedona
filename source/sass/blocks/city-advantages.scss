@@ -1,0 +1,54 @@
+.city-advantages {
+  padding: 35px 0 35px 50px;
+
+  text-align: left;
+  color: $black;
+
+  background-color: $white;
+}
+
+.city-advantages__item:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.city-advantages__item {
+  position: relative;
+}
+
+.city-advantages__item::before {
+  position: absolute;
+  top: -10px;
+  left: -48px;
+
+  content: "";
+  width: 40px;
+  height: 38px;
+
+  background-color: $white;
+  background-repeat: no-repeat;
+}
+
+.city-advantages__item--house::before {
+  background-image: url("../../img/advantages/house.svg");
+}
+
+.city-advantages__item--souvenirs::before {
+  background-image: url("../../img/advantages/souvenirs.svg");
+}
+
+.city-advantages__item--food::before {
+  background-image: url("../../img/advantages/food.svg");
+}
+
+.city-advantages__title {
+  margin: 0 0 21px 0;
+
+  font-weight: bold;
+}
+
+.city-advantages__description {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+}

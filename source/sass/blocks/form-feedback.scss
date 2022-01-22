@@ -1,0 +1,21 @@
+.form-feedback {
+  margin-bottom: 51px;
+}
+
+.form-feedback__title {
+  font-weight: bold;
+}
+
+.form-feedback__textarea {
+  padding: 18px 21px 24px 21px;
+
+  background-color: $grey-200;
+  border: none;
+}
+
+.form-feedback__textarea::placeholder {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+}
