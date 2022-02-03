@@ -1,9 +1,29 @@
 .page-header {
-  padding-bottom: 389px;
-  margin-bottom: 32px;
+  padding-bottom: 360px;
 
   background-color: $white;
-  background-image: url("../../img/header.jpg");
+  background-image: url("../../img/header-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/header-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/header-desktop.jpg");
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  left: calc(50% - 51px);
+
+  @media (min-width: $tablet-width) {
+    height: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 97px;
+  }
 }

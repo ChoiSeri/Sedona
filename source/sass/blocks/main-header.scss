@@ -5,12 +5,20 @@
 }
 
 .main-header__title {
-  margin: 0 26px 0 0;
+  margin: 0 0 26px 0;
 
   font-weight: bold;
   font-size: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .main-header__description {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }

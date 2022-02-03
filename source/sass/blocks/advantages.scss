@@ -1,4 +1,6 @@
 .advantages {
+  padding-top: 32px;
+
   text-align: center;
 }
 
@@ -17,40 +19,63 @@
 
 .advantages__list {
   margin: 0;
+  padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .advantages__item {
   padding-top: 25px;
 
   background-color: $grey;
+
+  &:first-child,
+  &:nth-child(2) {
+    background-color: $blue;
+
+    color: $white;
+  }
 }
 
-.advantages__item:first-child,
-.advantages__item:nth-child(2) {
-  background-color: $blue;
-
-  color: $white;
+.advantages__city {
+  grid-column: 1 / -1;
+  order: 1;
 }
 
-.advantages__item-image::after {
-  display: block;
-  content: "";
-  width: 320px;
-  height: 260px;
+.advantages__item-image {
+  display: flex;
+  flex-direction: column;
 
-  background-color: $blue;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 / -1;
+  }
 
-.advantages__item-image:first-child::after {
-  background-image: url("../../img/motel.jpg");
-}
+  &::after {
+    grid-column: span 2;
+    display: block;
+    content: "";
+    width: 320px;
+    height: 256px;
 
-.advantages__item-image:nth-child(2)::after {
-  background-image: url("../../img/devil-bridge.jpg");
+    background-color: $blue;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  &:first-child::after {
+    background-image: url("../../img/motel.jpg");
+  }
+
+  &:nth-child(2)::after {
+    background-image: url("../../img/devil-bridge.jpg");
+  }
 }
 
 .advantages__title {
@@ -67,7 +92,7 @@
 
 .advantages__description {
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 39px;
 
   font-size: 14px;
 }

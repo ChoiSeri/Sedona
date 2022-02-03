@@ -1,5 +1,7 @@
-.radio:not(:last-child) {
-  margin-bottom: 43px;
+.radio {
+  &:not(:last-child) {
+    margin-bottom: 43px;
+  }
 }
 
 .radio__label {

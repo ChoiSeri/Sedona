@@ -1,3 +1,11 @@
+.impression-form {
+  grid-column: 1/2;
+
+  &--order {
+    order: -1;
+  }
+}
+
 .impression-form__list {
   margin: 0;
   padding: 0;

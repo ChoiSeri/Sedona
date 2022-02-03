@@ -9,12 +9,12 @@
 
   background-color: $grey-200;
   border: none;
-}
 
-.field__input::placeholder {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: none;
-  color: $black;
+  &::placeholder {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+    color: $black;
+  }
 }

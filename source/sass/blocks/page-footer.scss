@@ -1,7 +1,13 @@
 .page-footer {
-  margin-top: 38px;
+  margin-top: 36px;
 
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 }
 
 .page-footer__text {

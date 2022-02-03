@@ -2,44 +2,43 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>Сайт Седона: форма отзыва</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-<header class="page-header">
-  <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo-image" src="img/logo.svg" width="102" height="84" alt="Логотип Sedona">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <ul class="main-nav__list">
-      <li class="main-nav__item">
-        <a class="main-nav__item-link" href="index.html">Главная</a>
-      </li>
-      <li class="main-nav__item">
-        <a class="main-nav__item-link" href="photo.html">Фото и видео</a>
-      </li>
-      <li class="main-nav__item main-nav__item--active">
-        <a class="main-nav__item-link">Форма отзыва</a>
-      </li>
-      <li class="main-nav__item">
-        <a class="main-nav__item-link" href="https://htmlacademy.ru/">Html academy</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-<main class="page-main">
-  <section class="main-header">
-    <div class="wrapper">
+<div class="page__wrapper">
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="img/logo.svg" width="102" height="84" alt="Логотип Sedona">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="photo.html">Фото и видео</a>
+        </li>
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__item-link">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="https://htmlacademy.ru/">Html academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="main-header">
       <h1 class="main-header__title">Оставьте свой отзыв</h1>
       <p class="main-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них,
         а также о посещенных вами достопримечательностях</p>
-    </div>
-  </section>
-  <section class="form-review">
-    <div class="wrapper">
+    </section>
+    <section class="form-review">
       <h2 class="visually-hidden">Напишите отзыв</h2>
       <form class="form-review__form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form-review__item login-form">
@@ -63,17 +62,17 @@
         <fieldset class="form-review__item contact-form">
           <legend class="form-review__title">Контактная информация:</legend>
           <div class="contact-form__field field">
-            <label class="field__label">Контактный телефон<sup>*</sup>:<br>
-              <input class="field__input field__input--telephone" type="tel" name="telephone" placeholder="Введите телефон">
-            </label><br>
+            <label class="field__label" for="tel"><span class="hide hide--desktop">Контактный</span>
+              телефон<sup>*</sup>:</label>
+            <input class="field__input field__input--telephone" type="tel" id="tel" name="telephone" placeholder="Введите телефон">
+            <br>
           </div>
           <div class="contact-form__field field">
-            <label class="field__label">Электронная почта<sup>*</sup>:<br>
-              <input class="field__input field__input--email" type="email" name="email" placeholder="Введите e-mail">
-            </label>
+            <label class="field__label" for="email">Электронная почта<sup>*</sup>:</label>
+            <input class="field__input field__input--email" type="email" id="email" name="email" placeholder="Введите e-mail">
           </div>
         </fieldset>
-        <fieldset class="form-review__item impression-form">
+        <fieldset class="form-review__item impression-form impression-form--order">
           <legend class="form-review__title">Ваше общее впечатление:</legend>
           <ul class="impression-form__list">
             <li class="impression-form__item radio">
@@ -129,12 +128,10 @@
           * — обязательные поля
         </p>
       </form>
-    </div>
-  </section>
-</main>
-<footer class="page-footer">
-  <h2 class="visually-hidden">Мы в соцсетях</h2>
-  <div class="wrapper">
+    </section>
+  </main>
+  <footer class="page-footer">
+    <h3 class="visually-hidden">Мы в соцсетях</h3>
     <p class="page-footer__text">#visitsedona</p>
     <div class="page-footer__social social">
       <ul class="social__list">
@@ -161,7 +158,7 @@
         <img src="img/htmlacademy.svg" width="27" height="35" alt="Сайт HTML Academy">
       </a>
     </div>
-  </div>
-</footer>
+  </footer>
+</div>
 </body>
 </html>
